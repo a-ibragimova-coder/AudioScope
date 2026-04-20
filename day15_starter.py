@@ -74,7 +74,7 @@ freqs = np.fft.rfftfreq(CHUNK, d=1.0/RATE)
 # Format: (name, low_hz, high_hz, color_hex)
 #
 BANDS = [
-    ("Sub-bass", 15,   65,    "#e53935"),   # Red — felt more than heard
+    ("Sub-bass", 10,   65,    "#e53935"),   # Red — felt more than heard
     ("Bass",     65,   270,   "#fb8c00"),   # Orange — kick drum, bass guitar
     ("Low-mid",  270,  520,   "#fdd835"),   # Yellow — body of sound
     ("Mid",      520,  2100,  "#43a047"),   # Green — vocals, snare
@@ -221,4 +221,4 @@ finally:
     stream.stop_stream()
     stream.close()
     pa.terminate()
-    print("\nAudioScope ended. See you tomorrow for Day 16!")
+    print("\nAudioScope ended. See you tomorrow for Day 16!!")
