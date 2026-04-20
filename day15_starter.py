@@ -9,7 +9,7 @@ import sys
 # ============================================================
 
 RATE = 44100          # Sample rate (Hz)
-CHUNK = 2048          # Samples per FFT window — power of 2
+CHUNK = 1024          # Samples per FFT window — power of 2
 FORMAT = pyaudio.paFloat32
 CHANNELS = 1
 
